@@ -41,7 +41,8 @@ def send_slack_message(title=None, description=None, url=None) -> None:
 
 
 def get_target() -> str:
-    with open("targets.txt") as file:
+    dirpath = os.path.join(os.path.dirname(os.path.abspath(__file__)))
+    with open(os.path.join(dirpath, "targets.txt")) as file:
         targets = file.read().splitlines()
 
     return random.choice(targets)
