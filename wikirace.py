@@ -19,7 +19,7 @@ def send_slack_message(title=None, description=None, url=None) -> None:
             },
             {
                 "title": f"Target: {get_target()}",
-                "text": "Try to get from the article to the target in the least amount of clicks. React with how many click you got today!",
+                "text": "Try to get from the article to the target in the least amount of clicks. React with how many clicks you got today!",
                 "color": "white",
                 "actions": [
                     {
